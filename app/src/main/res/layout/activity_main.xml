@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/enter_age_year"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="101dp"
+        android:background="@drawable/round_corners"
+        android:ems="10"
+        android:textSize="22sp"
+        android:fontFamily="@font/gameofsquid"
+        android:gravity="center"
+        android:hint="@string/enter_the_year"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Age_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Age_textview"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_corners"
+
+        android:fontFamily="@font/gameofsquid"
+        android:gravity="center"
+        android:text="@string/your_age_is"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_corners"
+        android:text="@string/guess_my_age"
+        android:textSize="22dp"
+        android:fontFamily="@font/gameofsquid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>
